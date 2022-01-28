@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body onload="showData()">
+
+    <button id="logoutBtn" onclick="logout()">Log Out</button>
+
+    <section class="mainSection">
+        <section class="card" data-aos="zoom-in" data-aos-duration="3000">
+
+            <p id="p"> </p>
+
+            <br><br>
+
+            <div>
+                <h1>Your Data</h1>
+
+                <br>
+
+                <table>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr id="tr"></tr>
+                </table>
+            </div>
+        </section>
+    </section>
+
+</body>
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();  
+</script>
+
+</html>

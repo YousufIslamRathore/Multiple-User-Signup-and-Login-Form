@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <button onclick="toLogIn()" class="changeButton">LogIn Page<i class="far fa-arrow-alt-circle-right"></i></button>
+
+    <section class="mainSection">
+
+        <fieldset data-aos="fade-in" data-aos-duration="3000">
+
+            <legend>Sign Up Form</legend>
+
+
+            <form onsubmit="setData(this)">
+
+
+                <label for="firstname">
+                    <p>First Name:</p>
+                    <input type="text" placeholder="Enter First Name" id="firstname" required>
+                </label>
+
+                <br><br>
+
+                <label for="lastname">
+                    <p>Last Name:</p>
+                    <input type="text" placeholder="Enter Last Name" id="lastname" required>
+                </label>
+
+                <br><br>
+
+                <label for="email">
+                    <p>Email:</p>
+                    <input type="email" placeholder="Enter Email Address" id="email" required>
+                </label>
+
+                <br><br>
+
+                <label for="password">
+                    <p>Password:</p>
+                    <input type="password" placeholder="Enter Password" id="password" maxlength="10" minlength="5"
+                        required>
+                    <i class="far fa-eye-slash" id="show" onclick="showPass(this)"></i>
+                </label>
+
+                <br><br>
+
+                <label for="contact">
+                    <p>Contact:</p>
+                    <input type="number" placeholder="Enter Contact Number" id="contact" required>
+                </label>
+
+                <br><br>
+
+                <div style="display: flex; justify-content: center;">
+                    <button> Submit </button>
+                </div>
+
+
+            </form>
+
+        </fieldset>
+    </section>
+
+</body>
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();  
+</script>
+
+</html>

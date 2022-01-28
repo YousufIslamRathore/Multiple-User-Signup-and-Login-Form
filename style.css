@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+.mainSection {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+fieldset {
+    padding: 20px;
+    margin: 0px 10px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    /* max-width: 700px; */
+}
+
+legend {
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: rgb(37, 33, 33);
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    margin-bottom: 10px;
+}
+
+label {
+    display: flex;    
+    justify-content: center;
+    align-items: center ;
+    margin: 5px;
+    padding: 3px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(197, 192, 192);
+}
+
+label > p {
+    width: 120px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+label > input {
+    padding: 8px;
+    border: none;
+    width: 300px;
+    font-size: 18px;
+    outline: none;
+    background: none;
+}
+/* input:focus {
+        border-bottom: 2px solid grey;
+} */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#show {
+    cursor: pointer;
+    width: 25px;
+}
+
+.changeButton {
+    cursor: pointer;    
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+button:hover {
+    border-width: 2px;
+    box-shadow: 5px 5px 10px grey;
+    font-weight: bold;
+}
+
+
+/* ///// DASHBOARD ///// */
+
+.card {
+    border: 2px dashed black;
+    padding: 20px;
+    background-color: white;
+}
+.card > p {
+    margin: 10px 5px;
+    font-size: 25px;
+}
+.card > div {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 3px rgb(196, 193, 193);
+}
+.card > h1 {
+    margin: 5px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#logoutBtn {
+    background-color: red; 
+    color: white; 
+    font-weight: bold; 
+    font-size: 12px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+#logoutBtn:hover {
+    text-decoration: underline;
+}
+
+table {
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+}
+table th {
+    font-size: 18px;
+}
+table th, td {
+    border: 2px solid black;
+    padding: 5px;
+    /* border-radius: 5px; */
+    text-align: center;
+}
